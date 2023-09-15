@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+
+
 import './App.css';
+import BasicExample from './Bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SweetAlert from './SweetAlert';
+// import GreenSock from './GreenSockAnimation';
+
+// import React from "react";
+import ContactForm from './Foormspree';
+
+// import MyForm from './Foormspree';
+
+
 
 function App() {
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+ {/* Sweet Alert component: */}
+    <SweetAlert/>
+
+{/* Bootstrap component:     */}
+    <BasicExample/>
+
+{/* Green Sock Animation Component */}
+    {/* <GreenSock/> */}
+
+{/* Formspree Component     */}
+    <ContactForm/>
+    {/* <MyForm/> */}
+
     </div>
   );
 }
